@@ -1,0 +1,17 @@
+base: ubuntu/trusty
+
+apt:
+  packages:
+    - python
+    - python-dev
+    - build-essential
+
+
+python27:
+  requirements:
+    - requirements.txt
+
+after_install:
+  - pip install /build/smithy/voting-machine*.tar.gz
+
+cmd: ['voting-web']
