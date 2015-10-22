@@ -14,4 +14,4 @@ python27:
 after_install:
   - pip install /build/smithy/voting-machine*.tar.gz
 
-cmd: ['voting-web’]
+cmd: ['voting-web']
